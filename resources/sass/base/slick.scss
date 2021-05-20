@@ -1,0 +1,29 @@
+.categories__list {
+    display: flex;
+    overflow: hidden;
+    @media screen and (min-width: 1200px) {
+        width: 106%;
+    }
+}
+
+.slick-list.draggable {
+    @media screen and (min-width: 1200px) {
+        width: 96%
+    }
+}
+
+.slick-slide{
+    width: 311px;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &:nth-child(odd)  {
+        margin-top: 30px;
+    }
+
+    @media screen and (max-width: 576px) {
+       margin: 0 auto;
+    }
+}

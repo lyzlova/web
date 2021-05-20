@@ -1,0 +1,17 @@
+@import "../base/variables";
+
+.button {
+    padding: 20px 33px 20px 34px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17.58px;
+    color: $color-text-white;
+    text-transform: uppercase;
+    text-align: center;
+    background: $color-button-bcg;
+    border-radius: 70px;
+    box-sizing: border-box;
+    border: 2px solid $color-text-white;
+}
+
+

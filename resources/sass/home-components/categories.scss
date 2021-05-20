@@ -1,0 +1,58 @@
+@import "../base/variables";
+
+.categories {
+    padding: 20px 20px 140px;
+    @media screen and (min-width: 1200px) {
+        padding: 20px 40px 140px;
+    }
+
+    &__content {
+        border-radius: 22px;
+        background: url('../../images/top-bg.jpg');
+        background-size: cover;
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background: url("../../images/top-bg@2x.jpg") no-repeat 100%;
+            background-size: cover;
+        }
+    }
+
+    &__list {
+        padding: 48px 13px 100px;
+
+        @media screen and (min-width: 1200px) {
+            padding: 47px 0 78px 159px;
+        }
+    }
+}
+
+.categories-header {
+    padding: 82px 30px 40px;
+
+    @media screen and (min-width: 1200px) {
+        padding: 82px 154px 40px 159px;
+    }
+
+    &__title {
+        letter-spacing: 2.1px;
+        margin-top: -4px;
+
+        @media screen and (max-width: 576px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__button {
+        min-width: 188px;
+        color: $color-text-white;
+        background-color: inherit;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: $color-text-white;
+        }
+    }
+}

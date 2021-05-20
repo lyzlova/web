@@ -1,0 +1,19 @@
+@import '~bootstrap/scss/bootstrap';
+@import '~normalize.css';
+@import "~slick-carousel/slick/slick.scss";
+@import "~slick-carousel/slick/slick-theme.scss";
+@import "base/main";
+@import "base/variables";
+@import "base/visually-hidden";
+@import "base/slick";
+
+@import "home-components/button";
+@import "home-components/categories";
+@import "home-components/category";
+@import "home-components/title";
+//
+//@import "home-components/faq";
+//@import "home-components/footer";
+//@import "home-components/products";
+
+

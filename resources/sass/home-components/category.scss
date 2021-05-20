@@ -1,0 +1,57 @@
+@import "../base/variables";
+
+.category {
+    &__picture {
+        margin-bottom: 18px;
+        background-color: $color-ellipse-first;
+
+        img {
+            border-radius: 44px 44px 44px 0;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -3%;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background: conic-gradient(from 180deg at 50% 50%,
+                $color-ellipse-start 0deg,
+                $color-ellipse-first 180deg,
+                $color-ellipse-second 360deg);
+            transform: matrix(0, 1, 1, 0, 0, 0);
+        }
+    }
+
+    &__title {
+        max-width: 230px;
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 400;
+        color: $color-text-white;
+    }
+
+    &:hover > picture::before,
+    &:focus > picture::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: transparent;
+        background: linear-gradient(180deg,
+            $color-linear-gradient-picture-first 60.42%,
+            $color-linear-gradient-picture-second 100%);
+        opacity: 0.8;
+        border-radius: 44px 44px 44px 0;
+    }
+
+    &:hover > &__title,
+    &:focus > &__title {
+        text-decoration: underline;
+    }
+}
+

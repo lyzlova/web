@@ -1,0 +1,43 @@
+@import "../base/variables";
+
+.faq {
+    z-index: 6;
+    top: 9.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &__title {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: $color-faq-title;
+        margin-bottom: 50px;
+    }
+
+    &__button {
+        padding: 22px 96px 18px 34px;
+        &::after {
+            position: absolute;
+            top: 50%;
+            right: 23px;
+            display: block;
+            width: 18px;
+            height: 18px;
+            content: "";
+            transform: translate(-50%, -50%);
+            background: url('../../images/svg/down-arrow.svg') center center no-repeat;
+        }
+        &::before {
+            position: absolute;
+            top: 50%;
+            right: -100px;
+            display: block;
+            width: 120px;
+            height: 116px;
+            content: "";
+            transform: translate(-50%, -50%);
+            background: url('../../images/svg/Vector.svg') center center no-repeat;
+        }
+    }
+
+}
